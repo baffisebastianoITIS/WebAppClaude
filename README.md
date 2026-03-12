@@ -11,30 +11,12 @@ docker compose up --build -d
 docker compose up -d
 ```
 
-## Fermare
-```bash
-docker compose down
-```
 
-## Reset completo (cancella il DB)
+## Reset completo in caso di malfunzionamento (cancella il DB)
 ```bash
 docker compose down
 docker volume rm codinator_db_data
 docker compose up --build -d
-```
-
-## Vedere i log
-```bash
-docker compose logs web
-```
-
-## Salvare le modifiche su GitHub
-```bash
-cd /workspaces/WebAppClaude
-git add -A
-git commit -m "messaggio"
-git pull --rebase
-git push
 ```
 
 ## Porte
